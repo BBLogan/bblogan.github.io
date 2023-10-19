@@ -1,0 +1,278 @@
+/* Root Variables */
+:root {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    /* color: #DAA520; */
+    display: flex;
+    flex: auto;
+   }
+   
+   /* remeber you've added in the lobotomised owwwwwl */
+    * + * {
+       padding: 10px 10px 10px 10px;
+    }
+   
+    /* Move your navigation styling up here or even into the lobotomised owl */
+   .flex-container {
+       display: flex;
+       flex-wrap: wrap;
+     }
+     
+     .flex-item-left {
+       flex: 50%;
+     }
+     
+     .flex-item-right {
+       flex: 50%;
+     }
+   
+   
+   /* Final Font Colours 
+   Colour 1 #2F4F4F - Dark Slate Grey
+   Colour 2 #DAA520 - Golden Rod
+   Colour 3 #00CED1 - Dark Turquoise
+   Colour 4 #A9A9A9 - Dark Grey
+   Colour 5 #AFEEEE - Pale Turquoise
+   Colour 6 #FFF0F5 - Lavender Blush
+   Colour 7 #EEE8AA - Pale Golden Rod */
+   
+   /* Global Styles */
+   body, h1, h2, p {
+       margin: 0;
+       padding: 0;
+   }
+   
+   #header-text h1 {
+       color: #2F4F4F;
+       display: inline;
+       font-size: x-large;
+   }
+   
+   #emphasis {
+       color: #2F4F4F;
+       margin-right: 1rem;
+   }
+   
+   
+   body {
+       /* background-color: #f4f4f4; */
+       margin: 0;
+       /* display: flex; */
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+       /* height: 100vh; */
+   }
+   
+   /* Header Styles */
+   /* Put in here the highlight colour for Welcome! <- and if you want bold, italics etc */
+   
+   /* Navigation Styles */
+   nav {
+       /* background-color: #333;
+       color: white; */
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       padding: 1em;
+   }
+   
+   /* so the parent nav above has its flex display and now the children (all below .nav-links) all need their flex displays done */
+   .nav-links {
+       list-style: none;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+       align-items: left;
+   }
+   
+   .nav-links li {
+       margin-right: 20px;
+       display: flex;
+       justify-items: space-between;
+   }
+   
+   .nav-links a {
+       text-decoration: none;
+       color: #2F4F4F;
+       margin-right: 20px;
+       display: flex;
+       justify-items: space-between;
+   }
+   
+   /* Hamburger Styles - Mobile */
+   .burger {
+       display: none;
+       cursor: pointer;
+   }
+   
+   /* Hero Styles */
+   
+   /* Body Styles */
+   main {
+       padding: 2em;
+   }
+   .container {
+       /* background-color: #fff; */
+       padding: 20px;
+       border-radius: 8px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       width: 300px;
+   }
+   
+   h2 {
+       text-align: center;
+       /* color: #333; */
+   }
+   
+   /* Column Styles */
+   
+   /* Form Styles */
+   body, p, label {
+       width: 100%;
+       /* height: 100vh; */
+       margin: 0;
+       /* background-color: #1B1B32; */
+       /* color: #F5F6F7; */
+       font-size: 16px;
+   }
+   
+   h1, p {
+       margin: 1em auto;
+       text-align: center;
+   }
+   
+   form {
+       display: flex;
+       flex-direction: column ;
+       flex-wrap: wrap;
+       width: 60vw;
+       max-width: 500px;
+       min-width: 300px;
+       margin: 0 auto;
+       padding-bottom: 2em;
+   }
+   
+   fieldset {
+       border: none;
+       padding: 2rem 0;
+       border-bottom: 3px solid #3b3b4f;
+     }
+     
+   fieldset:last-of-type {
+       border-bottom: none;
+     }
+     
+   label {
+       margin-top: 10px;
+       /* color: #555; */
+       display: block;
+       margin: 0.5rem 0;
+   }
+   
+   input,
+   textarea, select {
+       padding: 8px;
+       margin-top: 5px;
+       margin-bottom: 10px;
+       width: 100%;
+       min-height: 2em;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+   }
+   
+   input, textarea {
+       /* background-color: #0a0a23; */
+       border: 1px solid #0a0a23;
+       color: #ffffff;
+   }
+   
+   .inline {
+       width: unset;
+       margin: 0 0.5em 0 0;
+       vertical-align: middle;
+     }
+   
+     button {
+       background-color: #007BFF;
+       color: #fff;
+       padding: 10px;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+   }
+   
+   input[type="submit"] {
+       display: block;
+       width: 60%;
+       margin: 1em auto;
+       height: 2em;
+       font-size: 1.1rem;
+       background-color: #3b3b4f;
+       border-color: white;
+       min-width: 300px;
+     }
+   
+   button:hover {
+       background-color: #0056b3;
+   }
+   
+   /* Responsive Design Styles */
+   
+   
+   /* Footer Styles */
+   
+   
+   @media only screen and (min-width: 768px) {
+   /* Style adjustments for smaller screens use min-width for default smaller screens THE BELOW WILL NEED TO BE CHANGED */
+       .nav-links {
+           /* display: none; */
+           flex-direction: column;
+           width: 100%;
+           position: absolute;
+           top: 60px;
+           left: 0;
+           background-color: #333;
+           /* need to put a flex box in here for hte links make sure to inlcude my logo in the same section */ 
+       }
+   /* convert all css code / every thing above to be smaller screen sized and then have media queries making the screen larger - rather than building in dektop and trying ot make smaller */
+       .nav-links.show {
+           display: flex;
+       }
+   
+       .nav-links li {
+           text-align: center;
+           margin: 0;
+           padding: 10px;
+           border-bottom: 1px solid white;
+       }
+   
+       .burger {
+           display: block;
+       }
+   }
+   /* Make another media query for laptop small and laptop large screens - google media query sizes - can make the smaller screen use min-width */
+   
+   @media only screen and (min-width: 1800px) {
+       /* put desktop styling in the below */
+   }
+   
+   /* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
+   @media (max-width: 800px)
+       /* .flex-item-right, .flex-item-left {
+         flex: 100%;
+       } */
+
+       .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .flex-item-left {
+        flex: 50%;
+      }
+      
+      .flex-item-right {
+        flex: 50%;
+      }

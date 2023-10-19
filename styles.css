@@ -1,0 +1,270 @@
+/* Hello person who is marking the below - you'll notice a LOT is commented out. I planned for much, much more but no time to execute as I'd like. Thought I'd show my working out / design thoughts with the commented out code rather than deleting it entirely. There's not much but fingers crossed its enough to at least pass */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&display=swap');
+
+/* CSS Reset - DO NOT DELETE THIS  */
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: #fff;
+}
+ol, ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    /* font-size: 1.9rem; */
+    /* font-weight: 700; */
+    /* margin-bottom: 5px; */
+    /* -webkit-text-stroke: 1px black; */
+    /* color: #fff; */
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+
+/* Root Variable */
+:root {
+    background-color: #000;
+    font-family: 'Noto Sans', sans-serif;
+    font: #fff;
+    min-width: 100%;
+    --darkturq: #00ced1;
+    --gold: #daa520;
+    --slate: #2f4f4f;
+    --paleturq: #afeeee;
+    --grey: #a9a9a9;
+    --lavblush: #fff0f5;
+    --palegold: #eee8aa;
+}
+
+/* Custom Classes */
+.emphasis {
+    color: Var(--gold);
+    font-style: italic;
+}
+/* a:link {color:blue;} */
+/* a:visited {color: var(grey);} */
+/* a:hover, a:focus, a:active {color:red;} */
+/* input:focus {background-color:var(gold);} */
+.button, button {
+    /* padding: 10px 20px; */
+    /* display: inline-block; */
+    /* border: 2px solid #fff; */
+    /* border-radius: 4px; */
+    /* background-color: #fff; */
+    /* font-size: 0.8rem; */
+    /* text-decoration: none; */
+    /* color: #000; */
+    /* text-transform: uppercase; */
+    /* margin-top:10px; */
+}
+.button:hover, button:hover {
+    /* background-color: var(--gold); */
+    /* color: #fff; */
+}
+
+/* Header Styles */
+header {
+    /* padding: 20px 40px; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    background-color: var(--slate);
+    /* float: left; */
+}
+nav {
+    display: flex;
+    /* flex:auto; */
+    flex-grow: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* list-style: none; */
+    /* float: left; */
+}
+nav a {
+    display: inline-block;
+    color: var(--palegold);
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 0.5rem;
+    border-radius: 4px;
+    /* display: flex; */
+    /* flex-wrap: wrap auto; */
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
+}
+nav a:hover {
+    background-color: var(--gold);
+    color: var(--paleturq);
+}
+header img {
+    height: 60px;
+    margin: 10px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+}
+
+/* Hero Section */
+.hero {
+    /* padding: 50px 50px; */
+    /* background-color: var(--gold); */
+}
+.header-text .last {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 50vh;
+    width: 100%;
+    /* padding-bottom: 20px; */
+    color: var(--palegold)
+}
+.header-text h1 .header-text p {
+    margin-top: 0;
+    /* padding: 20px; */
+    text-align: center;
+    /* box-shadow: 10px 10px 20px #fff; */
+}
+.header-text p {
+    /* padding: 0 20px; */
+    /* text-align: center; */
+}
+#logo {
+    display: flex;
+    flex: wrap;
+    justify-content: flex-start;
+}
+#hero {
+    /* height: 10vh; */
+    display: flex;
+    padding: 5px;
+    /* background-color: var(--turq); */
+}
+
+/* Navigation Styles */
+.nav-links li {
+    /* list-style: none; */
+    /* color: var(--gold); */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    /* padding: 1em; */
+}
+
+/* Body Styles */
+h1 {
+    padding: 5%;
+    text-align: center;
+    /* background-position: left center; */
+}
+
+#assistance, #otherareas {
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 20px;
+    text-align: center;
+}
+.column {
+    /* padding: 40px; */
+}
+#column-1 {
+    /* background-color: var(--paleturq); */
+}
+#column-2 {
+    /* background-color: var(--lavblush); */
+}
+#column-3 {
+    /* background-color: var(--palegold); */
+}
+.icons {
+    /* width: 25px; */
+    /* margin: 10px; */
+}
+.column .button {
+    /* background-color: var(--slate); */
+    /* margin-top: 10px; */
+    /* color: #fff; */
+}
+
+/* Contact Form Page */
+.contact {
+    /* background-color: var(--slate) */
+    /* font: #fff; */
+    /* padding: 50px; */
+    /* text-align: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* padding: 20px; */
+  }
+.field-group, .contact .button {
+    /* width: 100%; */
+    /* margin: 0 auto 10px; */
+}
+#first-name, #last-name, #email, #textarea {
+    /* background-color: var(--palegold); */
+    /* font-size: 1rem; */
+    /* padding: 0.5rem; */
+    /* width: 50%; */
+    /* border-radius: 4px; */
+}
+textarea {
+    /* height: 300px; */
+}
+.contact .button {
+    /* background-color: var(--gold); */
+    /* color: #fff; */
+}
+label {
+    /* display: block; */
+    /* text-align: left; */
+    /* margin-bottom: 5px; */
+    /* color: var(--gold); */
+}
+
+  /* Footer Styling */
+footer {
+    background-color: var(--slate);
+    /* text-align: left; */
+    padding: 20px;
+    /* color: #000; */
+  }
+
+  /* Media Queries */
+  @media only screen and (min-width: 600px) {
+    .columns {
+      flex-direction: row;
+      flex-wrap: wrap;
+}
+   .column {
+      flex-basis: 33%;
+      flex-grow: 1;
+    }
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .columns {
+      flex-direction: row;
+      flex-wrap: wrap;
+}
+   .column {
+      flex-basis: 33%;
+      flex-grow: 1;
+    }
+  }

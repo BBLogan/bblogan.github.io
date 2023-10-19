@@ -1,0 +1,55 @@
+<!-- This is my contact form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bex Logan - Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="logos-portfolio/BEXLOGANLOGO.png" class="logo" />
+            </div>
+            <div class="nav-links" >
+                <img src="graphicicons-portfolio/house-chimney-window-solid.svg" class="nav-links"><a href="index.html">Home</a>
+                    <img src="graphicicons-portfolio/pepper-hot-solid.svg" class="nav-links"><a href="/neurospicy-portfolio/">Neurospicy</a>
+                    <img src="graphicicons-portfolio/tachograph-digital-solid.svg" class="nav-links"><a href="/projects-portfolio.html">Projects</a>
+                    <img src="graphicicons-portfolio/paper-plane-solid.svg" class="nav-links"><a href="/contactme-portfolio/">Contact</a>
+                    <img src="graphicicons-portfolio/linkedin-in.svg" class="nav-links"><a href="https://www.linkedin.com/bex.logan" target="_blank">LinkedIn</a>
+                    <img src="graphicicons-portfolio/github.svg" class="nav-links"><a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            </div>
+        </nav>
+    </header>
+<section id="contact">
+    <h2>Get in Contact</h2>
+        <p>Please fill out this form with your information</p>
+    <form action="https://formspree.io/f/xaygazgd" method="POST">
+        <fieldset>
+            <p label for="first-name">Your First Name: <input id="first-name" name="first-name" type="text" required /></label></p>
+            <br>
+            <p label for="last-name">Your Last Name: <input id="last-name" name="last-name" type="text" required /></label></p>
+                
+            <p label for="email">Your Email: <input id="email" name="email" type="email" required /></label></p>
+        </fieldset>
+           
+        <fieldset>
+            <label for="message">Leave Me a Message:</label>
+            <textarea id="message" name="message" rows="4" cols="30" placeholder="I like coding on the beach..." required></textarea>
+        </fieldset>
+           
+        <fieldset>
+            <label for="referrer">How did you hear about me?</label>
+                <select id="referrer" name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">She Codes Website</option>
+                    <option value="2">She Codes Social Media</option>
+                    <option value="3">RAC Staff News</option>
+                    <option value="4">Other</option>
+                </select>
+        </fieldset>
+        <br>
+        <button type="submit" value="Submit">Submit</button>
+        </form>

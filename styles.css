@@ -12,9 +12,9 @@ html {
     box-sizing: inherit;
 }
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 10px;
-    border: 10px;
-    padding: 10px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
     font-weight: normal;
     color: #fff;
 }
@@ -24,7 +24,9 @@ ol, ul {
 img {
     max-width: 100%;
     height: auto;
-    /* orientation: center; */
+    orientation: center;
+    border-radius: 20px;
+    object-fit: cover;
 }
 h1 {
     font-size: 2.5rem;
@@ -49,130 +51,119 @@ h1 {
 .emphasis {
     color: Var(--gold);
     font-style: italic;
+    font-weight: bold;
 }
-
+.button, button {
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    background-color: var(--darkturq);
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
 .button:hover, button:hover {
     background-color: var(--gold);
-    color: #fff;
+    color: #000;
 }
 
 /* Header Styles */
-header {
-    padding: 10px 20px;
-    display: flex;
+.header {
+    padding: 20px 40px;
+    display:flex;
     flex-wrap: wrap;
-    flex-direction:row;
-    justify-content: space-around;
-    background-color: var(--slate);
-    /* float: left; */
+    flex-direction: row;
 }
-nav {
+.header-img {
+    max-height: 1px;
+    max-width: 1px;
+    margin: 1px;
+    padding: 1px;
+    border: 1px;
+}
+.logo {  
+    padding: 20px 40px;
     display: flex;
-    /* flex:auto; */
-    flex-grow: 1;
-    justify-content: flex-start;
-    align-items: center;
     flex-wrap: wrap;
-    list-style: none;
-    float: left;
+    flex-direction: row;
+    flex-grow: 1;
+    max-height: 25%;
+    max-width: 25%;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: var(--slate);
+    flex-grow: 1;
+    display: flex row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
 }
 nav a {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-    float: left;
+    display: inline-block;
     color: var(--palegold);
     font-size: 1rem;
     text-decoration: none;
     margin: 0 10px;
     padding: 0.5rem;
     border-radius: 4px;
-    /* display: flex; */
-    /* flex-wrap: wrap auto; */
-    /* flex-direction: row; */
-    /* justify-content: flex-end; */
 }
 nav a:hover {
     background-color: var(--gold);
-    color: var(--paleturq);
-    flex-grow: 1;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-    float: left;
-}
-header img {
-    display: flex;
-    flex-wrap: wrap auto;
-    flex-direction: row;
-    height: 60px;
-    margin: 5px;
-    padding: 5px;
+    color: var(--slate);
 }
 
 /* Hero Section */
 .hero {
-    padding: 10px 10px;
-    /* background-color: var(--gold); */
-
-}
-.hero-profileimage {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 60px;
-    margin: 10px;
-    padding: 20px;
-    /* align-self: center; */
+    margin: 250px;  
+    border: 250px;
+    padding: 250px;
+    background-color: var(--gold);
+    align-content: center;
+    justify-content: center;
 }
 .hero-text {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    /* min-height: 50vh; */
-    width: 100%;
-    padding-bottom: 1px;
-    color: var(--palegold)
+    align-content: center;
+    justify-content: center;
 }
-#logo {
+#image {
     display: flex;
-    flex: wrap;
-    justify-content: flex-start;
-}
-#hero {
-    /* height: 50vh; */
-    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    padding: 5px;
-    /* background-color: var(--turq); */
+    align-content: center;
+    justify-content: center;
+    max-height: 75%;
+    max-width: 75%;
+    margin: 10px;
+    border: 50px solid var(--lavblush);
+    padding: 10px;
 }
-
-/* Navigation Styles */
 
 /* Body Styles */
 h1 {
     font-size: 3rem;
     padding: 1px;
     text-align: center;
-    /* background-position: left center; */
 }
 h2 {
     font-size: 1.9rem;
     font-weight: 700;
     margin-bottom: 5px;
-    /* -webkit-text-stroke: 1px black; */
-    /* color: #fff; */
-    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
 }
-#assistance, #otherareas {
+p {
+    margin: 10px;
+    border: 10px;
+    padding: 10px;
+}
+#assistance {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -182,7 +173,7 @@ h2 {
 /* Contact Form Page */
 .contact {
     background-color: var(--slate);
-    color: #fff;
+    color: var(--grey);
     padding: 50px;
     text-align: center;
     display: flex;
@@ -220,7 +211,7 @@ footer {
     padding: 1px;
     /* color: #000; */
     font-size: xx-small;
-  }
+}
 
   /* Media Queries */
   @media only screen and (min-width: 600px) {
